@@ -37,3 +37,27 @@ console.log(lista.join(" | ")); //string com diferente separador
 console.log(frutas);
 alert(frutas[1].nome);
 alert(frutas[2].cor);
+
+//condicional, laços e datas
+var idadec = prompt("Qual a sua idade?");
+
+if (idadec >= 18){
+    alert("maior de idade.");
+} else {
+    alert("menor de idade");
+}
+
+var count = 0;
+while (count<=5) {
+    console.log(count);
+    count++;
+}
+
+var countf;
+for (countf = 0; countf <= 5; countf++) {
+    console.log("countf = "+countf)
+}
+
+var d = new Date();
+console.log("Data atual: "+d);
+console.log(d.getMonth() + 1); //retorna o índice do mês, como o primeiro índice no JS é "0", na prática precisaremos somar + 1 para obtermos corretamente o mês.
