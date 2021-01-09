@@ -28,3 +28,34 @@ var idade = prompt("Qual a sua idade?");
 validaIdade(idade);
 console.log("Variável Global: "+validarg);
 //console.log("Variável Local: "+validar);     //No cenário atual se esta linha for descomentada, irá gerar um erro no console, pois 'validar' é uma varíavel local dentro da function validaIdade
+
+//inserindo botões, acionando funções, ajax e eventos 
+
+function clicou() {
+    alert("Obrigado por clicar");
+}
+
+function clicouAjax() {
+    document.getElementById("agradecimento").innerHTML = "Obrigado por Clicar";
+}
+
+function redirecionar() {
+    //window.open("https://globallabs.academy/");           //abertura em uma nova aba
+    window.location.href = "https://globallabs.academy/";   //abertura na janela ativa
+}
+
+function trocar(elemento) {
+    elemento.innerHTML = "Obrigado por passar o mouse";
+}
+
+function voltar(elemento) {
+    elemento.innerHTML = "Passe o mouse aqui";
+}
+
+function load() {
+    alert("Página carregada!");
+}
+
+function funcaoChange(elemento) {
+    console.log(elemento.value)
+}
